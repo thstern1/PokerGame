@@ -39,6 +39,9 @@ class Deck:
     def shuffle(self):
         random.shuffle(self._cards)
 
+    def deal(self):
+        #take out first card from the deck
+        return self._cards.pop(0)
 
 card = PlayingCard("♠", "2")
 card2 = PlayingCard("♣", "A")
@@ -47,5 +50,5 @@ print(card2)
 deck = Deck()
 print(deck)
 deck.shuffle()
-print(deck
-      
+print(deck)
+print(deck.deal())
